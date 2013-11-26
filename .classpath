@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="lib" path="/Users/DYLEE/programming tool/android-sdk-macosx/tools/support/annotations.jar"/>
+	<classpathentry kind="lib" path="libs/dropbox-android-sdk-1.2.2.jar"/>
+	<classpathentry kind="lib" path="libs/httpmime-4.0.3.jar"/>
+	<classpathentry kind="lib" path="libs/json_simple-1.1.jar"/>
+	<classpathentry kind="lib" path="libs/libspen23_multiwindow.jar"/>
+	<classpathentry kind="lib" path="libs/libspen23.jar"/>
+	<classpathentry kind="lib" path="libs/aniqroid.jar"/>
+	<classpathentry kind="lib" path="/Users/DYLEE/androidWorkspace/SnsDiary/libs/apache-mime4j-0.6.jar"/>
+	<classpathentry kind="lib" path="/Users/DYLEE/androidWorkspace/SnsDiary/libs/httpclient-4.0.1.jar"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="lib" path="/Users/DYLEE/androidWorkspace/SnsDiary/libs/me2day.jar"/>
+	<classpathentry kind="lib" path="/Users/DYLEE/androidWorkspace/SnsDiary/libs/twitter4j-async-android-2.2.5.jar"/>
+	<classpathentry kind="lib" path="/Users/DYLEE/androidWorkspace/SnsDiary/libs/twitter4j-core-android-2.2.5.jar"/>
+	<classpathentry kind="lib" path="/Users/DYLEE/androidWorkspace/SnsDiary/libs/twitter4j-media-support-android-2.2.5.jar"/>
+	<classpathentry kind="lib" path="/Users/DYLEE/androidWorkspace/SnsDiary/libs/twitter4j-stream-android-2.2.5.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

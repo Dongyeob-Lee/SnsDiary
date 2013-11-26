@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+   	android:id="@+id/new_diary_layout">
+   	<LinearLayout 
+   	    android:layout_width="match_parent"
+   	    android:layout_height="45dp"
+   	    android:orientation="horizontal">
+   	    <TextView 
+   	    android:id="@+id/tv_memodialog_title"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:text="Memo"
+   	    android:textSize="30px"/>
+   	    <TextView 
+   	    android:id="@+id/tv_memodialog_date"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_marginLeft="200dp"
+   	    android:text="2013.5.12"
+   	    android:textSize="15px"/>
+   	</LinearLayout>
+
+   	<EditText
+   	    android:id="@+id/et_memodialog_body"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content"
+   	    android:ems="8"
+   	    android:hint="Input memo"
+   	    android:lines="10"
+   	    android:inputType="textMultiLine" 
+   	    android:gravity="top">
+
+   	    <requestFocus />
+   	</EditText>
+    
+
+</LinearLayout>

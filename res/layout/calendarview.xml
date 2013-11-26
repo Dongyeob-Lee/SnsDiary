@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_all"
+    android:orientation="vertical"
+    tools:context=".DairyMain" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="112dp"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_monthly_clicked" />
+
+            <ImageView
+                android:id="@+id/btn_cal_weekly"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:onClick="onMenuClick"
+                android:src="@drawable/icon_weekly" />
+
+            <ImageView
+                android:id="@+id/btn_cal_daily"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:onClick="onMenuClick"
+                android:src="@drawable/icon_daily" />
+
+            <ImageView
+                android:id="@+id/btn_cal_freenote"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:onClick="onMenuClick"
+                android:src="@drawable/icon_freenote" />
+
+            <ImageView
+                android:id="@+id/btn_cal_setting"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:onClick="onMenuClick"
+                android:src="@drawable/icon_setting" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="9"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="65dp"
+            android:layout_marginLeft="88dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+			<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="200dp"
+			    android:orientation="horizontal" >
+
+			    <LinearLayout
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:orientation="vertical" >
+
+			        <TextView
+			            android:id="@+id/tv_cal_year"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="center_horizontal"
+			            android:text="2013"
+			            android:textColor="#808080"
+			            android:textSize="40dp" />
+
+			        <ImageView
+			            android:layout_width="80dp"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="center_horizontal"
+			            android:src="@drawable/line" />
+
+			        <TextView
+			            android:id="@+id/tv_cal_month"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="center_horizontal"
+			            android:text="4"
+			            android:textColor="#333333"
+			            android:textSize="90dp" />
+			    </LinearLayout>
+
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_marginLeft="40dp"
+			        android:orientation="vertical" >
+			    </LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+			    android:id="@+id/tableparentlinearlayout"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical" >
+
+			    <TableLayout
+			        android:id="@+id/tl_calendar_monthly"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center_horizontal"
+			        android:orientation="vertical" >
+			    </TableLayout>
+			</LinearLayout>
+
+			<LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom|left"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+                    <ImageView 
+			        android:id="@+id/btn_cal_new_diary"
+			        android:layout_width="150dp"
+			        android:layout_height="wrap_content"
+			        android:onClick="onMenuClick"
+			        android:src="@drawable/icon_new_diary"/>
+			    <ImageView 
+			        android:id="@+id/btn_move_date"
+			        android:layout_width="150dp"
+			        android:layout_height="wrap_content"
+			        android:onClick="onMenuClick"
+			        android:src="@drawable/icon_move_date"/>
+			    <ImageView 
+			        android:id="@+id/btn_prev_month"
+			        android:layout_width="120dp"
+			        android:layout_height="wrap_content"
+			        android:onClick="onMenuClick"
+			        android:src="@drawable/icon_prev_month"/>
+				<ImageView 
+			        android:id="@+id/btn_next_month"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:onClick="onMenuClick"
+			        android:src="@drawable/icon_next_month"/>
+				<ImageView 
+			        android:id="@+id/btn_goto_today"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:onClick="onMenuClick"
+			        android:src="@drawable/icon_goto_today"/>
+                </LinearLayout>
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout><!--
+                <TextView android:id="@+id/cur_day_diary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="다이어리 없음"/>
+-->
+
+<!--
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1.0">
+                    
+                    <LinearLayout 
+                        android:id="@+id/tableparentlinearlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/bg_diary_list">
+                        <TextView 
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Diary"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginTop="3dp"
+                            android:textSize="20px"/>
+
+                            <TableLayout
+                                android:id="@+id/tablelayout_diary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+                            </TableLayout>
+                    </LinearLayout>
+                    <LinearLayout 
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/bg_memo"
+                        android:layout_weight="0.5">
+                        <TextView 
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Memo"
+                            android:textSize="20px"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="7dp"/>
+
+                        <EditText
+                            android:id="@+id/editText1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:gravity="top"
+                            android:textSize="20px"
+                            android:lineSpacingMultiplier="1.4"
+                            android:cursorVisible="false"
+                            android:lines="10"
+                            android:inputType="textMultiLine" >
+
+                            <requestFocus />
+                        </EditText>
+                        
+                    </LinearLayout>
+                    
+                </LinearLayout>
+-->

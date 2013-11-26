@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_all"
+    android:orientation="vertical"
+    tools:context=".DairyMain" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="112dp"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/weekly_icon_monthly"
+                android:layout_width="125dp"
+                android:layout_height="110dp"
+                android:src="@drawable/icon_monthly" />
+
+            <ImageView
+                android:id="@+id/weekly_icon_weekly"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/icon_weekly_clicked" />
+
+            <ImageView
+                android:id="@+id/weekly_icon_daily"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/icon_daily" />
+
+            <ImageView
+                android:id="@+id/weekly_icon_freenote"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/icon_freenote" />
+
+            <ImageView
+                android:id="@+id/weekly_icon_setting"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/icon_setting" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="9"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="9"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="60dp"
+                android:layout_marginLeft="88dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+                <LinearLayout 
+                    android:id="@+id/ll_weekly"
+                    android:layout_width="672dp"
+                    android:layout_height="960dp"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/bg_weekly">
+                    <TableLayout 
+                        android:id="@+id/tl_weekly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical"></TableLayout>
+                </LinearLayout>
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <ImageView 
+			        android:id="@+id/btn_weekly_add"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:src="@drawable/icon_new_diary"/>
+			    <ImageView 
+			        android:id="@+id/btn_weekly_move"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:src="@drawable/icon_move_date"/>
+			    <ImageView 
+			        android:id="@+id/btn_prev_week"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:src="@drawable/icon_prev_week"/>
+			    <ImageView 
+			        android:id="@+id/btn_next_week"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:src="@drawable/icon_next_week"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

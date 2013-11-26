@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_all"
+    android:orientation="vertical"
+    tools:context=".DairyMain" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="125dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="112dp"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/btn_freenote_monthly"
+                android:layout_width="125dp"
+                android:layout_height="110dp"
+                android:src="@drawable/icon_monthly" />
+
+            <ImageView
+                android:id="@+id/btn_freenote_weekly"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/icon_weekly" />
+
+            <ImageView
+                android:id="@+id/btn_freenote_daily"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/icon_daily" />
+
+            <ImageView
+                android:id="@+id/btn_freenote_freenote"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/icon_freenote_clicked" />
+
+            <ImageView
+                android:id="@+id/btn_freenote_setting"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/icon_setting" />
+        </LinearLayout>
+    </LinearLayout>
+
+        <ScrollView 
+            android:layout_width="match_parent"
+            android:layout_height="980dp"
+            android:layout_marginLeft="88dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           
+            android:orientation="vertical" >
+
+            <LinearLayout
+			    android:id="@+id/freenotelinearlayout"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical" >
+
+			    <TableLayout
+			        android:id="@+id/tl_freenote"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center_horizontal"
+			        android:orientation="vertical" >
+			    </TableLayout>
+			</LinearLayout>
+
+        </LinearLayout>
+        </ScrollView>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="70dp" 
+	    android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="40dp">
+
+		<ImageView
+		    android:id="@+id/btn_freenote_new_memo"
+		    android:layout_width="wrap_content"
+		    android:layout_height="60dp"
+		    android:src="@drawable/icon_new_memo" />
+
+        <ImageView 
+            android:id="@+id/btn_freenote_delete_memo"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="290dp"
+            android:src="@drawable/icon_delete_memo"/>
+
+</LinearLayout>
+</LinearLayout><!--  -->

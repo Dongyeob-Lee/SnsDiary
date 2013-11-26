@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/textbox_dialog_layout">
+    
+    <TextView 
+        android:id="@+id/textbox_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="none"/>
+	<TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Text Size"/>
+	<Spinner 
+	    android:id="@+id/text_size_spinner"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:prompt="@string/text_size"/>
+	<TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Text Color"/>
+	<Spinner 
+	    android:id="@+id/text_color_spinner"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:prompt="@string/text_color"/>
+    <EditText
+        android:id="@+id/textbox_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ems="10"
+        android:inputType="textMultiLine" >
+    </EditText>
+    <!-- <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <Button android:id="@+id/textbox_save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"/>
+        <Button android:id="@+id/textbox_cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"/>
+    </LinearLayout> -->
+
+</LinearLayout>

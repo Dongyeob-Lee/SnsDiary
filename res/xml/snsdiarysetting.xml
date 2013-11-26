@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+<CheckBoxPreference 
+    	 android:key="@string/setting_dropbox_log_inout"
+        android:summary="You should log in dropbox if you want to share your diary automatically."
+        android:title="Dropbox Log in/out" 
+        android:icon="@drawable/dropbox_icon"
+    />
+<ListPreference />
+<PreferenceCategory></PreferenceCategory>
+</PreferenceScreen>

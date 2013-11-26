@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFF9C8"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/buttton1"
+                android:layout_width="400dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:hint="Empty"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/button2"
+                android:layout_width="400dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:hint="Empty"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/button3"
+                android:layout_width="400dp"
+                android:layout_height="350dp"
+                android:gravity="center"
+                android:hint="Empty"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/button4"
+                android:layout_width="400dp"
+                android:layout_height="350dp"
+                android:gravity="center"
+                android:hint="Empty"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/button5"
+                android:layout_width="400dp"
+                android:layout_height="350dp"
+                android:gravity="center"
+                android:hint="Empty"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/button6"
+                android:layout_width="400dp"
+                android:layout_height="350dp"
+                android:gravity="center"
+                android:hint="Empty"
+                android:textSize="25sp" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

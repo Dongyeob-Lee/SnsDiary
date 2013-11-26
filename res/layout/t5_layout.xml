@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+    <!-- Start -->
+	<!-- Main Start -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        
+		<!-- Head Start -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:background="@drawable/widget_head"
+            android:orientation="horizontal" >
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="   Miary"
+                android:textSize="30sp"
+                android:textColor="#FFFFFF"
+                />
+            <Button 
+                android:id="@+id/widget_button_left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/widget_button_left"
+                />
+            <Button
+                android:id="@+id/widget_button_right"
+                android:layout_width="match_parent" 
+                android:layout_height="match_parent"
+                android:layout_weight="2" 
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/widget_button_right"
+                />
+        <!-- Head End -->
+        </LinearLayout>
+
+        <!-- Body Start -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" 
+            android:background="@drawable/widget_line"
+            android:orientation="vertical"
+            >
+            <!-- Body Title Start -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/widget_body_title" >
+
+                <Button
+                    android:id="@+id/widget_button_pre_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/widget_button_pre_month" />
+
+                <TextView
+                    android:id="@+id/widget_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="년/월"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/widget_button_next_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/widget_button_next_month" />
+                
+            <!-- Body Title End --> 
+            </LinearLayout>
+			
+			
+			
+            <!-- Calendar Start -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <!-- Date Start -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    >
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="  일"
+                        android:gravity="center_vertical"
+                        android:textSize="13sp"
+                        android:textColor="#FF0000"
+                        android:background="#e1dbde"
+                        android:layout_margin="1dp"
+                        />
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="월"
+                        android:gravity="center_vertical"
+                        android:textSize="13sp"
+                        android:textColor="#000000"
+                        android:background="#e1dbde"
+                        android:layout_margin="1dp"
+                        />
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="화"
+                        android:gravity="center_vertical"
+                        android:textSize="13sp"
+                        android:textColor="#000000"
+                        android:background="#e1dbde"
+                        android:layout_margin="1dp"
+                        />
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="수"
+                        android:gravity="center_vertical"
+                        android:textSize="13sp"
+                        android:textColor="#000000"
+                        android:background="#e1dbde"
+                        android:layout_margin="1dp"
+                        />
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="목"
+                        android:gravity="center_vertical"
+                        android:textSize="13sp"
+                        android:textColor="#000000"
+                        android:background="#e1dbde"
+                        android:layout_margin="1dp"
+                        />
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="금"
+                        android:gravity="center_vertical"
+                        android:textSize="13sp"
+                        android:textColor="#000000"
+                        android:background="#e1dbde"
+                        android:layout_margin="1dp"
+                        />
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="토"
+                        android:gravity="center_vertical"
+                        android:textSize="13sp"
+                        android:textColor="#0100FF"
+                        android:background="#e1dbde"
+                        android:layout_margin="1dp"
+                        />
+                <!-- Date End -->
+                </LinearLayout>
+                
+                
+                <!-- Line 1 Start -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:orientation="horizontal"
+                    >
+                    <LinearLayout 
+                        android:id="@+id/widget_cal1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                <!-- Line 1 End -->    
+                </LinearLayout>
+                
+                <!-- Line 2 Start -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:orientation="horizontal"
+                    >
+                    <LinearLayout 
+                        android:id="@+id/widget_cal8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal10" 
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal12"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal13"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal14"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                <!-- Line 2 End -->    
+                </LinearLayout>
+                <!-- Line 3 Start -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:orientation="horizontal"
+                    >
+                   	<LinearLayout 
+                        android:id="@+id/widget_cal15"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal16"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal17"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal18"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal19"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal20"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal21"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                <!-- Line 3 End -->    
+                </LinearLayout>
+                <!-- Line 4 Start -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:orientation="horizontal"
+                    >
+                    <LinearLayout 
+                        android:id="@+id/widget_cal22"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal23"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal24"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal25"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal26"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal27"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal28"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                <!-- Line 4 End -->    
+                </LinearLayout>
+                <!-- Line 5 Start -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:orientation="horizontal"
+                    >
+                    <LinearLayout 
+                        android:id="@+id/widget_cal29"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal30"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal31"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal32"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal33"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal34"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal35"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                <!-- Line 5 End -->    
+                </LinearLayout>
+                <!-- Line 6 Start -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:orientation="horizontal"
+                    >
+                    <LinearLayout 
+                        android:id="@+id/widget_cal36"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal37"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal38"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal39"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal40"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal41"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout 
+                        android:id="@+id/widget_cal42"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+                <!-- Line 6 End -->    
+                </LinearLayout>
+                <!-- Line Empty Start -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    >
+                <!-- Line Empty End -->    
+                </LinearLayout>
+
+
+            <!-- Calendar End -->
+            </LinearLayout>
+            
+         
+         <!-- Body End -->
+        </LinearLayout>
+        
+	<!-- Main End -->
+	</LinearLayout>
+<!-- End -->
+</LinearLayout>
